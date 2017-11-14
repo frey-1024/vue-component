@@ -7,74 +7,8 @@
 </head>
 <body>
 <ul>
-    <li>
-        <a href="javascript:;" onclick="skipView('releaseActivityEntry',{activityId: 324})">activity</a>
-    </li>
-    <li>
-        <a href="javascript:;" onclick="skipView('releaseColumnEdit',{uid: 1234,token:'12445556'})">releaseColumnEdit</a>
-    </li>
-      <li>
-        <a href="javascript:;" onclick="skipView('highlight')">精彩节目</a>
-     </li>
-      <li>
-        <a href="javascript:;" onclick="skipView('highlightDetail',{uid: 1234,token:'12445556'})">精彩节目详情</a>
-    </li>
-      <li>
-        <a href="javascript:;" onclick="skipView('applicationForm',{uid: 10086,token:'9e1100efbba3eb962bca74e519469ba4',activityId:'30'})">活动报名表</a>
-    </li>
-      <li>
-        <a href="javascript:;" onclick="skipView('analysis',{uid: 10086,token:'9e1100efbba3eb962bca74e519469ba4',activityId:'30'})">统计分析</a>
-    </li>
-       <li>
-        <a href="javascript:;" onclick="skipView('dynamicDetail',{uid: 17889,token:'c360ff0b1924ee931fb13968e6cb8d93',id:'88', type:'1'})">动态详情</a>
-     </li>
-       <li>
-        <a href="javascript:;" onclick="skipView('zoneDetail',{uid: 17889,token:'c360ff0b1924ee931fb13968e6cb8d93',id:'1130'})">专栏详情</a>
-     </li>
-       <li>
-        <a href="javascript:;" onclick="skipView('quesAnsDetail',{uid: 17889,token:'c360ff0b1924ee931fb13968e6cb8d93',questionId:'101'})">问答详情</a>
-     </li>
-       <li>
-        <a href="javascript:;" onclick="skipView('myQuestion',{uid: 17893,token:'ad337b861381a75582fb19513f892a5b',questionId:'51932'})">我的问题</a>
-     </li>
-       <li>
-        <a href="javascript:;" onclick="skipView('myAnswer',{uid: 17889,token:'c360ff0b1924ee931fb13968e6cb8d93',questionId:'101'})">我的答案</a>
-     </li>
-    <li>
-      <a href="javascript:;" onclick="skipView('liveApply',{uid: 10086,token:'9e1100efbba3eb962bca74e519469ba4'})">职播申请</a>
-    </li>
   <li>
-    <a href="javascript:;" onclick="skipView('occIdentity',{uid: 18460,token:'abdsfe88sjsej83'})">职业身份认证</a>
-  </li>
-    <li>
-      <a href="javascript:;" onclick="skipView('certification',{uid: 10086,token:'9e1100efbba3eb962bca74e519469ba4'})">认证列表</a>
-    </li>
-    <li>
-      <a href="javascript:;" onclick="skipView('businessCard',{id: 110119160})">企业名片</a>
-    </li>
-    <li>
-      <a href="javascript:;" onclick="skipView('myCardHolder',{uid: 10090,token:'1a37930245577a94d659ab0442ebba61'})">我的名片夹</a>
-    </li>
-  <li>
-    <a href="javascript:;" onclick="skipView('multiLiveApply',{uid: 10086,token:'9e1100efbba3eb962bca74e519469ba4'})">多媒体职播申请</a>
-  </li>
-   <li>
-    <a href="javascript:;" onclick="skipView('aboutUs')">关于我们</a>
-  </li>
-  <li>
-    <a href="javascript:;" onclick="skipView('userHome',{masterId:18069})">个人主页</a>
-  </li>
-  <li>
-    <a href="javascript:;" onclick="skipView('taskPackage')">任务包</a>
-  </li>
-  <li>
-    <a href="javascript:;" onclick="skipView('applyAgent')">申请代理</a>
-  </li>
-  <li>
-    <a href="javascript:;" onclick="skipView('liveType')">选择直播方式</a>
-  </li>
-  <li>
-    <a href="javascript:;" onclick="skipView('phoneLive')">手机直播申请</a>
+    <a href="javascript:;" onclick="skipView('iosSelect')">仿ios选择</a>
   </li>
 </ul>
 
@@ -91,7 +25,7 @@
         packageParams += key + '=' + params[key];
       });
     }
-    location.href = 'http://localhost:2000/' + path + '.html' + packageParams;
+    location.href = 'http://localhost:5000/' + path + '.html' + packageParams;
   }
 </script>
 </body>
