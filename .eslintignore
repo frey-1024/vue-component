@@ -1,0 +1,5 @@
+build/*.js
+config/*.js
+index.html
+test/**
+src/lib/html2canvas.js
