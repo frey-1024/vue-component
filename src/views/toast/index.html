@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>仿ios Select 选择</title>
+</head>
+<body>
+<div id="app" style="margin-top: 300px;">
+  <button @click="openToast('top')">弹上面</button>
+  <button @click="openToast('center')">弹中间</button>
+  <button @click="openToast('bottom')">弹下面</button>
+  <toast ref="toast"></toast>
+</div>
+<script src="https://cdn.bootcss.com/vue/2.3.3/vue.min.js"></script>
+</body>
+</html>
