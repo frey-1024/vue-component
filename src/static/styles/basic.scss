@@ -1,0 +1,86 @@
+@import "./color";
+
+//reset element style
+html {
+-ms-overflow-style:none;
+overflow:-moz-scrollbars-none;
+}
+html::-webkit-scrollbar{width:0}
+body,div,span,header,footer,nav,section,aside,article,ul, li, a, p, h1, h2, h3, h4,h5, i, b, textarea, button, input, select  {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  border: none;
+  font-family: 'Hiragino Sans GB', 'Hiragino Sans GB W3', 'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;
+  -webkit-tap-highlight-color:transparent;
+  &:focus {
+    outline: none;
+  }
+}
+html{
+  -webkit-overflow-scrolling : touch !important;
+  overflow: auto !important;
+  height: 100% !important;
+}
+body{
+  -webkit-overflow-scrolling : touch !important;
+  overflow: auto !important;
+  position: relative;
+  height:100% !important;
+  width:100%;
+  background:$c-little-gray;
+  font-size: 12px;
+}
+.clearfix {
+  zoom: 1;
+  &::after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+.vertical-middle {
+  height: 100%;
+  width: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.pull-left{
+  float:left;
+}
+.pull-right{
+  float:right;
+}
+.mt6{
+  margin-top: 6px;
+}
+.ml60{
+  margin-left: 60px;
+}
+
+.pointer{
+  cursor: pointer;
+}
+[v-cloak] {
+  display: none;
+}
+.slide-fade-enter-active {
+    transition: all .6s ease;
+}
+
+.slide-fade-leave-active {
+    transition: all .5s ease;
+}
+
+.slide-fade-enter,
+.slide-fade-leave-active {
+    transform: translateX(60px);
+    opacity: 0;
+}

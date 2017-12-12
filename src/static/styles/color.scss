@@ -1,0 +1,94 @@
+$c-block : #000;
+$c-natural-block : #3B3F44;
+$c-gray : #979797;
+$c-small-gray: rgb(151, 151, 151);
+$c-some-gray: rgb(190,190,190);
+$c-light-gray : #BEBEBE;//提示文字
+$c-text-main : #3B3D5B;//提示文字
+$c-half-main : lighten($c-text-main, 50%);//提示文字
+$c-smoky-gray : #DAD7D9;
+$c-lightslate-gray: #E0E0E0; //边框颜色
+$c-half-lightslate-gray: #F0F0F0; //边框颜色
+$c-little-gray: #f9f9f9; //背景
+
+$c-ivory : #f7f7f7;
+$c-light-white: #EEEEEE;
+$c-white : #FFF;
+
+$c-red : #E34F51;
+$c-natural-red : #E44F51;
+$c-light-red : #EF7979 ;
+
+$c-pink : #ffa1a1;
+
+$c-orange : #f34e19;
+
+$c-blue : #1975C3;
+
+$c-green : #25C354;
+
+$c-yellow : #F6A623;
+
+$c-primary : #00bcd4;
+$c-success : #6AC8D4;
+$c-light-blue : #6EB8F1;
+
+$c-purple-grey : #212340;// 导航栏背景
+
+$b-lightslate-gray : 1px solid $c-lightslate-gray;
+$b-half-lightslate-gray : 1px solid $c-half-lightslate-gray;
+$b-main: 1px solid $c-text-main;
+$b-half-main: 1px solid lighten($c-text-main, 50%);
+$b-bolder-active-main: 3px solid $c-text-main;
+$b-mask: rgba(59,61,91,0.60);
+$b-transparent-block: rgba(0,0,0,0);
+
+// app colors
+$c-start: #6bf3d4; // 渐变起始色
+$c-end: #6eb8f1; // 渐变终止色
+$c-light-blue : #6EB8F1;
+
+$c-number: #D67573; //用于数字提示
+$c-red: #E44F51; //用于数字提示
+$c-bg-tip: #E44F51; //用于数字提示
+
+$c-bg: #f9f9f9; //背景;
+$c-bg-white: #ffffff; //白色背景;
+$c-gray : #979797;//灰色字体
+$c-light-gray : #bebebe;//提示文字
+$c-lightslate-gray: #E0E0E0; //边框颜色
+
+$c-divider:#e6e6e6; //用于分割线
+
+$c-tabBar: #667980; // 用于默认Tab bar Icon
+$c-introdution: #667980; // 用于默认Tab bar Icon
+
+$c-btnText: #6eb8f1; //适用于高亮按钮文字
+
+$c-title: #4d4d4d; // 适用于标题
+$c-text: #4d4d4d; // 适用于正文
+
+$c-title-white: #ffffff; // 适用于标题
+$c-text-white: #ffffff; // 适用于正文
+$c-text-main : #3B3D5B;//提示文字
+$c-text-gold: #FFE98D;// 金字
+$c-border-main : #3B3D5B;//提示文字
+
+$c-assistTxt: #808080; //适用于辅助文字
+$c-subtitle: #808080; //适用于副标题
+
+$c-tipText: #b3b3b3; //适用于提示性文字
+$c-timeText: #b3b3b3; //适用于时间文字
+
+$c-border:#e6e6e6; //适用于边框
+$c-light-border:#f0f0f0; //浅颜色边框
+$c-bg-authenticate:#F5A623;// 认证边框色
+
+$c-status: #6AC8D4; //选中的状态
+$c-border-common:#e0e0e0;
+$c-border-half-common: rgba(224,224,224,0.5);
+
+$b-border-half-common: 1px solid $c-border-common;
+$b-border-common: 1px solid $c-border-half-common;
+
+
