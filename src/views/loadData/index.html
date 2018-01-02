@@ -14,13 +14,14 @@
     :refresh-deviation="refreshDeviation"
     :load-deviation="loadDeviation"
     :load-stage="loadStage"
+    :refresh-stage="refreshStage"
     :load-completed="loadCompleted"
-    :scroll-height="scrollHeight"
+    :height="height"
     @refresh="refreshData"
     @load-more="loadMore"
     >
-    <ul slot="content">
-      <li v-for="item in values" style="height: 80px; border: 1px solid #CCC; margin-bottom: 10px;">{{item}}</li>
+    <ul slot="content" class="content">
+      <li v-for="item in values">{{item}}</li>
     </ul>
   </load>
 </div>

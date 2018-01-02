@@ -10,11 +10,12 @@ new Vue({
     return {
       isRefresh: true,
       isLoad: true,
-      loadDeviation: 30,
-      refreshDeviation: 70,
+      loadDeviation: 0,
+      refreshDeviation: 75,
+      refreshStage: 'WILL',
       loadStage: 'WILL',
       loadCompleted: false,
-      scrollHeight: '80%',
+      height: '100%',
       // 数据
       values: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
       count: 1,
@@ -24,12 +25,11 @@ new Vue({
   },
   methods: {
     refreshData() {
-      console.log('aaa');
       this.count += 1;
       this.values = [this.count, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-      this.loadStage = 'DOING';
+      this.refreshStage = 'DOING';
       setTimeout(() => {
-        this.loadStage = 'DID';
+        this.refreshStage = 'DID';
         if (this.values.length > 20) {
           this.loadCompleted = true;
         } else {
