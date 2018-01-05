@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>按钮点击波浪效果</title>
+  <style>
+    /*按钮样式*/
+    #btn{
+      width: 200px;
+      height: 35px;
+      line-height: 35px;
+      background-color: #00BB9E;
+      color: white;
+      outline: none;
+      box-shadow: none;
+      border: none;
+      overflow: hidden;
+      position: relative;
+    }
+    /*波浪样式*/
+    #span{
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      transition: all 0.6s ease-in;
+      background-color: white;
+      opacity: .2;
+      border-radius: 35px;
+    }
+  </style>
+</head>
+<body>
+<button id="btn">确定 </button>
+<script>
+  //可以执行一次点击效果
+  var oneClick = true;
+  document.getElementById("btn").addEventListener('click',function(e){
+    //判断是否可以执行一次点击效果
+    // --因为执行波浪效果需要时间，一次波浪结束之后允许执行下一次点击
+    if (oneClick){
+      this.innerHTML += "<span id='span'></span>";
+      //获取点击时的坐标
+      var event = e || window.event;
+      var x = event.clientX;
+      var y = event.clientY;
+      //获取按钮的坐标
+      var moveX = document.getElementById("btn").offsetLeft;
+      var moveY = document.getElementById("btn").offsetTop;
+      //获取按钮宽度
+      var btnWidth = document.getElementById("btn").clientWidth;
+      //设置点击后波浪样式
+      document.getElementById("span").style.borderRadius = 0;
+      document.getElementById("span").style.width = parseInt(btnWidth)*2+'px';
+      document.getElementById("span").style.left = x-moveX-5+'px';
+      document.getElementById("span").style.marginLeft = -btnWidth+'px';
+      document.getElementById("span").style.height = parseInt(btnWidth)*2+'px';
+      document.getElementById("span").style.top = y-moveY-5+'px';
+      document.getElementById("span").style.marginTop = -btnWidth+'px';
+      //定时删除波浪
+      setTimeout(function(){
+        document.getElementById("span").remove();
+        oneClick = true;
+      },600);
+      //不可以执行一次点击效果
+      oneClick = false;
+    }else {
+      return false;
+    }
+  })
+</script>
+</body>
+</html>

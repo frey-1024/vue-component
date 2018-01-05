@@ -1,0 +1,11 @@
+#app{
+  height: 100%;
+}
+.content{
+  li{
+    height: 80px; border: 1px solid #CCC; margin-bottom: 10px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}

@@ -220,7 +220,7 @@
       listenerTouchStart(ev) {
         ev.stopPropagation();
         // 这个如果不加 移动端不会连续执行move,不会执行touchend
-        ev.preventDefault();
+//        ev.preventDefault();
         // 正在加载时，禁止执行
         if (this.isForbidMove()) {
           return;
@@ -253,7 +253,7 @@
        */
       listenerTouchEnd(ev) {
         ev.stopPropagation();
-        ev.preventDefault();
+//        ev.preventDefault();
         if (this.isForbidMove()) {
           return;
         }
@@ -313,6 +313,7 @@
   .scroll-wrapper{
     position: relative;
     overflow: hidden;
+    touch-action: none;
   }
   @keyframes refreshing-loader {
     0% {
@@ -340,6 +341,7 @@
     position: relative;
     top: 12px;
     z-index: 3;
+    touch-action: none;
   }
   .loading{
     display: flex;
