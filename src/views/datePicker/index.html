@@ -9,14 +9,14 @@
 <body>
 <div id="app">
   <div @click="openDatePicker">{{selectedDate}}</div>
-  <data-picker
+  <date-picker
     v-if="showDatePicker"
     :date="date"
     :min-date="minDate"
     :max-date="maxDate"
     @confirm="confirm"
     @cancel="cancel"
-    ></data-picker>
+    ></date-picker>
 </div>
 <script src="https://cdn.bootcss.com/vue/2.3.3/vue.min.js"></script>
 </body>

@@ -1,4 +1,4 @@
-import DataPicker from './components/DatePicker.vue';
+import DatePicker from './components/DatePicker.vue';
 import './style.scss';
 
 new Vue({
@@ -12,23 +12,19 @@ new Vue({
       selectedDate: '点击选择日期',
     };
   },
-  mounted() {
-  },
   methods: {
     openDatePicker() {
       this.showDatePicker = true;
     },
     confirm(value) {
-      console.log(value);
       this.showDatePicker = false;
       this.selectedDate = value;
     },
     cancel() {
-      console.log('cancel');
       this.showDatePicker = false;
     },
   },
   components: {
-    DataPicker,
+    DatePicker,
   },
 });
