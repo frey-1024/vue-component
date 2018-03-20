@@ -1,0 +1,35 @@
+@mixin generateIcon($icons){
+  @each $item in $icons{
+    $className: nth($item, 1);
+    $top: nth($item, 2);
+    @at-root .icon.icon-#{$className}{
+      background-position: 0 #{$top}px;
+    }
+  }
+}
+.icon{
+  display: inline-block;
+  overflow: hidden;
+  width: 16px;
+  height: 16px;
+  font-size: 0;
+  line-height: 0;
+  cursor: pointer;
+  margin-left: 1px;
+  margin-top: 1px;
+  background: url('../img/icons.png') 0 0 no-repeat;
+  // 其实这个可以写在外面，去掉@at-root,
+  @include generateIcon($icons:
+    (source 0)
+    (undo -48)
+    (redo -64)
+    (bold -416)
+    (italic -432)
+    (underline -448)
+    (strikethrough -464)
+    (lineheight -992)
+    (removeformat -480)
+    (checked -944)
+  );
+}
+

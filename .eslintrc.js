@@ -38,6 +38,7 @@ module.exports = {
         'comments': 320
       }
     ],
+    'no-cond-assign': 0,
     // console警告
     'no-console': 0,
     // 允许未定义
