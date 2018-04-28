@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>仿ios Select 选择</title>
+<link href="/v1/static/styles/loadDatadd9dda26c9ea3823e542.css" rel="stylesheet"></head>
+<body>
+<div id="app">
+  <load
+    :is-refresh="isRefresh"
+    :is-load="isLoad"
+    :refresh-deviation="refreshDeviation"
+    :load-deviation="loadDeviation"
+    :load-stage="loadStage"
+    :refresh-stage="refreshStage"
+    :load-completed="loadCompleted"
+    :height="height"
+    @refresh="refreshData"
+    @load-more="loadMore"
+    >
+    <ul slot="content" class="content">
+      <li v-for="item in values">{{item}}</li>
+    </ul>
+  </load>
+</div>
+<script src="https://cdn.bootcss.com/vue/2.3.3/vue.min.js"></script>
+<script type="text/javascript" src="/v1/static/js/loadData.15ed683d1126c551515a.js"></script></body>
+</html>
