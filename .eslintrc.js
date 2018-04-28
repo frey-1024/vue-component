@@ -41,6 +41,7 @@ module.exports = {
     'no-cond-assign': 0,
     // console警告
     'no-console': 0,
+    'consistent-return': 0,
     // 允许未定义
     'no-undef': 0,
     // 允许new
@@ -51,6 +52,7 @@ module.exports = {
     'no-param-reassign': 0,
     // 允许嵌套三元表达式
     'no-nested-ternary': 0,
+    'linebreak-style': 0,
     // 允许不存在默认的抛出
     'import/prefer-default-export': 0,
     // allow optionalDependencies

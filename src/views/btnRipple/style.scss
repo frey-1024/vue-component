@@ -1,0 +1,49 @@
+#app{
+  height: 100%;
+}
+@import "./color";
+.btn{
+  overflow: hidden;
+  position: relative;
+  font-size: 14px;
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  cursor: pointer;
+  line-height: 1;
+  padding: 12px 20px;
+  border-radius: 4px;
+  transition: .5s;
+  &.btn-round{
+    border-radius: 20px;
+    padding: 12px 23px;
+  }
+}
+@mixin generateBtn($list){
+  @each $m in $list{
+    $type:nth($m, 1);
+    $border:nth($m, 2);
+    $background:nth($m, 3);
+    $color:nth($m, 4);
+    .btn-#{$type}{
+      border-color:  lighten($border, 4%);
+      background-color:  lighten($background, 10%);
+      color: $color;
+      &:hover{
+        border-color: $border;
+        background-color: $background;
+      }
+    }
+  }
+}
+//btn 样式
+@include generateBtn(
+  $list:
+      (default $c-border $c-white $c-text)
+      (red $c-red $c-red $c-white)
+      (blue $c-blue $c-blue $c-white)
+);
+
+
+
+
