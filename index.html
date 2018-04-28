@@ -40,7 +40,11 @@
         packageParams += key + '=' + params[key];
       });
     }
-    location.href = 'http://localhost:5000/' + path + '.html' + packageParams;
+    let url = '/';
+    if (location.href.indexOf('zhangkunusergit') >= 0) {
+      url = '/vue-component/dist/';
+    }
+    location.href = url + path + '.html' + packageParams;
   }
 </script>
 </body>
