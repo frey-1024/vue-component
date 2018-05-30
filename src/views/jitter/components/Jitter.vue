@@ -163,6 +163,9 @@
         }
       }
     },
+    destroyed() {
+      this.clearAnimate();
+    },
     watch: {
       start(newVal) {
         // 开始抖动
