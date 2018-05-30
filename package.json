@@ -13,7 +13,7 @@
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs",
-    "devSinglePage": "cross-env fileName=editView node build/dev-server.js"
+    "devSinglePage": "cross-env fileName=jitter node build/dev-server.js"
   },
   "dependencies": {
     "axios": "^0.16.2",

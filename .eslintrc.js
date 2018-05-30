@@ -46,6 +46,9 @@ module.exports = {
     'no-undef': 0,
     // 允许new
     'no-new': 0,
+    'arrow-body-style': 0,
+    'guard-for-in': 0,
+    'no-restricted-syntax': 0,
     // 禁止变量声明覆盖外层作用域的变量
     'no-shadow': ['error', { 'allow': ['state'] }],
     // 允许修改传入的参数
