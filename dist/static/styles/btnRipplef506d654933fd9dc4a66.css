@@ -1,0 +1,48 @@
+.zk-btn[data-v-892d55d4]{overflow:hidden;position:relative}.zk-ripple[data-v-892d55d4]{opacity:0;position:absolute;top:0;left:0;width:100%;height:100%}#app {
+  height: 100%; }
+
+.btn {
+  overflow: hidden;
+  position: relative;
+  font-size: 14px;
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  cursor: pointer;
+  line-height: 1;
+  padding: 12px 20px;
+  border-radius: 4px;
+  transition: .5s; }
+
+.btn.btn-round {
+    border-radius: 20px;
+    padding: 12px 23px; }
+
+.btn-default {
+  border-color: #f0f0f0;
+  background-color: white;
+  color: #373737; }
+
+.btn-default:hover {
+    border-color: #e6e6e6;
+    background-color: #ffffff; }
+
+.btn-red {
+  border-color: #f83d3d;
+  background-color: #f95a5a;
+  color: #ffffff; }
+
+.btn-red:hover {
+    border-color: #F72929;
+    background-color: #F72929; }
+
+.btn-blue {
+  border-color: #4799f0;
+  background-color: #63a9f2;
+  color: #ffffff; }
+
+.btn-blue:hover {
+    border-color: #348FEE;
+    background-color: #348FEE; }
+
+/*# sourceMappingURL=btnRipplef506d654933fd9dc4a66.css.map*/

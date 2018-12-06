@@ -1,0 +1,21 @@
+#app {
+  padding: 20px 100px; }
+
+.form-control {
+  outline: none;
+  padding: 8px 10px;
+  width: 100%;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  transition: border-color,box-shadow .3s; }
+
+.form-control:focus {
+    box-shadow: 0 0 4px rgba(52, 143, 238, 0.8);
+    border-color: rgba(52, 143, 238, 0.8); }
+
+.form-control input {
+    border: none;
+    height: 100%;
+    width: 100%; }
+
+/*# sourceMappingURL=jitterf506d654933fd9dc4a66.css.map*/
