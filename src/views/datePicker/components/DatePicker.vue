@@ -46,7 +46,7 @@
           <transition :name="fadeXType">
             <div :key="showDate.monthStr" class="e-calendar-monthday-wrapper">
               <div class="e-calendar-monthday-row" v-for="row in rows" >
-              <span v-for="day in row"  class="e-calendar-monthday-row-day" @click="selectDay(day)" :class="{'active': day.selected, 'disabled': day.disabled}">
+              <span v-for="day in row"  class="e-calendar-monthday-row-day" @click="selectDay(day)" :class="{'active': day.selected, 'disabled': day.disabled, 'pointer': day.value !== ''}">
                 <span v-text="day.value" class="e-calendar-monthday-row-day-value"></span>
                  <transition name="e_calendar_day">
                    <span class="e-calendar-monthday-row-day-cover" v-if="day.selected"></span>
@@ -308,7 +308,7 @@
         this.selectDate.weekStr = weekJson[this.selectDate.week];
       },
       selectDay(day) {
-        if (day.disabled || day.selected) {
+        if (day.disabled || day.selected || day.value === '') {
           return;
         }
         this.resetSelectDate(day.value);
@@ -447,7 +447,7 @@
       align-items: center;
       &-title{
         position: relative;
-        width: 90px;
+        width: 100px;
         height: 22px;
         text-align: center;
         &-content{
@@ -520,8 +520,10 @@
           align-items: center;
           flex: 1;
           position: relative;
-          cursor: pointer;
           height: 35px;
+          &.pointer{
+            cursor: pointer;
+          }
           &-value{
             position: relative;
             z-index: 1;
