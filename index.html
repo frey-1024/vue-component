@@ -43,10 +43,7 @@
         packageParams += key + '=' + params[key];
       });
     }
-    let url = '/';
-    if (location.href.indexOf('zhangkunusergit') >= 0) {
-      url = '/vue-component/dist/';
-    }
+    let url = '/vue-component-main/dist/';
     location.href = url + path + '.html' + packageParams;
   }
 
